@@ -17,6 +17,7 @@ class Car{
   }
   brake(){
     console.log('now applying the break')
+    this.currentspeed -=10
   }
   ZerotoSixty(){
     setTimeout(() => {
@@ -33,8 +34,8 @@ const ferrari = new Car('ferrari','red','250')
 // // console.log(ferrari.color)
 // // console.log(ferrari.name)
 // // console.log(ferrari.topSpeed)
-// ferrari.drive()
-// ferrari.brake()
+ferrari.drive()
+ferrari.brake()
+//  console.log(ferrari.currentspeed)
+// ferrari.ZerotoSixty()
  console.log(ferrari.currentspeed)
-ferrari.ZerotoSixty()
-console.log(ferrari.currentspeed)
