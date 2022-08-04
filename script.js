@@ -60,6 +60,17 @@ const porsche = new Car('porsche','yellow','260')
 // porsche.ZerotoSixty()
 // porsche.Stop()
 // console.log(porsche.currentspeed)
-const number = [1,2,3]
-number.push(4)
-console.log(number)
+// const number = [1,2,3]
+// number.push(4)
+// console.log(number)
+
+Array.prototype.mypush = function(item) {
+  this[this.length] = item
+  return this
+}
+const fruits = ['banana','apple','orange','pinappl']
+console.log(fruits.mypush('cookie'))
+fruits.mypush('kiwi')
+fruits.mypush('newfruit')
+fruits.mypush('coc')
+  fruits.mypush('tomato')
